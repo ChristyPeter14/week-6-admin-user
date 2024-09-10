@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <div class="center">
+        <h1> LOGIN</h1>
+        <h4 class="text">{{msg}}</h4>
+
+        <form action="/login" method="post">
+            <div class="txt_field">
+                <input type="text" id="email" name="email" value="">
+                <span></span>
+                 <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pwrd" name="password" value="">
+                <span></span> 
+                <label>Password</label>
+            </div>
+            <input class="sub" type="Submit" value="Login">
+            <div class="account">
+              <a class="acc" href="/signup">create an account ?</a>
+            </div>
+            
+            
+
+        </form>
+    </div>
+</body>
+</html>

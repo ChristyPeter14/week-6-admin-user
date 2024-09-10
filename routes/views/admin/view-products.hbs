@@ -1,0 +1,40 @@
+
+
+<section>
+    <div class="container">
+        <div class="row mt-4">
+            <a href="/admin/add-user" class="btn btn-success ml-auto mb-5">Add User</a>
+        </div>
+        <table class="table mt-5" id="peopleTable">
+  <thead>
+    <tr>
+      <th scope="col">No.</th>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Options</th>
+     
+    </tr>
+  </thead>
+  <tbody>
+    {{#each people}}
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td>{{this._id}}</td>
+      <td>{{this.name}}</td>
+      <td>{{this.email}}</td>
+      <td>
+        <a href="/admin/edit-user/{{this._id}}" class="btn btn-primary">Edit</a>
+        <a href="/admin/delete-user/{{this._id}}" class="btn btn-danger" onclick="return confirm('Do you want to delete {{this.name}}')">Delete</a>       
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+    </div>
+</section>
+<script>
+  $(function(){
+    $('#peopleTable').DataTable()
+  })
+</script>

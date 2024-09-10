@@ -1,0 +1,67 @@
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-center">Add User</h2>
+                <form action="/admin/add-user" method="post" >
+
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="name" required placeholder="Enter Name">
+                    <br>
+
+                    <label>Email address</label>
+                    <input type="email" class="form-control" name="email" required placeholder="Enter email">
+                    <br>
+
+                    <label>Password</label>
+                    <input type="password" class="form-control" name="password"required placeholder="Password">  
+                    <br>     
+
+                    <button type="submit" class="btn btn-success mt-4">Submit</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{{!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form</title>
+    <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body>
+    <div class="center">
+        <h1> SIGNUP</h1>
+        <h4 class="text">{{msg}}</h4>
+
+        <form action="/admin/add-user" method="post">
+
+              <div class="txt_field">
+                <input type="text" id="name" name="name" required>
+                <span></span>
+                 <label>Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text" id="email" name="email" required>
+                <span></span>
+                 <label>Email</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" id="pwrd" name="password" required>
+                <span></span> 
+                <label>Password</label>
+            </div>
+            <input class="sub" type="Submit" value="Login">
+           
+            
+            
+
+        </form>
+    </div>
+</body>
+</html> --}}
